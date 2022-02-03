@@ -1,5 +1,5 @@
 
-import notebook.auth
+import notebook
 
 
 c = get_config()  # noqa: F821
