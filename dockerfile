@@ -9,5 +9,7 @@ RUN pip3 --no-cache-dir install -r requirements.txt
 
 EXPOSE 8080
 
+RUN nohup jupyter lab --no-browser --allow-root --ip="0.0.0.0" --port=8080 &
+
 ENTRYPOINT ["python3"]
 CMD ["app.py"]
